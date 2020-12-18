@@ -419,7 +419,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -2209,7 +2209,7 @@
 //#define TFT_320x240
 //#define TFT_320x240_SPI
 //#define TFT_480x320
-//#define TFT_480x320_SPI
+#define TFT_480x320_SPI
 
 //
 // Skip autodetect and force specific TFT driver
@@ -2238,7 +2238,7 @@
 // root of your SD card, together with the compiled firmware.
 //
 //#define TFT_LVGL_UI_FSMC  // Robin nano v1.2 uses FSMC
-#define TFT_LVGL_UI_SPI   // Robin nano v2.0 uses SPI
+//#define TFT_LVGL_UI_SPI   // Robin nano v2.0 uses SPI
 
 //=============================================================================
 //============================  Other Controllers  ============================
@@ -2252,7 +2252,7 @@
 //
 // ADS7843/XPT2046 ADC Touchscreen such as ILI9341 2.8
 //
-//#define TOUCH_SCREEN
+#define TOUCH_SCREEN
 #if ENABLED(TOUCH_SCREEN)
   #define BUTTON_DELAY_EDIT  50 // (ms) Button repeat delay for edit screens
   #define BUTTON_DELAY_MENU 250 // (ms) Button repeat delay for menus
