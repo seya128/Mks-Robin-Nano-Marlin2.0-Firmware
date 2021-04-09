@@ -236,9 +236,13 @@ void tft_lvgl_init() {
 
       uiCfg.print_state = REPRINTING;
 
-      strncpy(public_buf_m, recovery.info.sd_filename, sizeof(public_buf_m));
-      card.printLongPath(public_buf_m);
-      strncpy(list_file.long_name[sel_id], card.longFilename, sizeof(list_file.long_name[sel_id]));
+      #if ENABLED(LONG_FILENAME_HOST_SUPPORT)
+        strncpy(public_buf_m, recovery.info.sd_filename, sizeof(public_buf_m));
+        card.printLongPath(public_buf_m);
+        strncpy(list_file.long_name[sel_id], card.longFilename, sizeof(list_file.long_name[sel_id]));
+      #else
+        strncpy(list_file.long_name[sel_id], recovery.info.sd_filename, sizeof(list_file.long_name[sel_id]));
+      #endif
       lv_draw_printing();
     }
   #endif
@@ -329,8 +333,13 @@ bool my_touchpad_read(lv_indev_drv_t * indev_driver, lv_indev_data_t * data) {
       data->state = LV_INDEV_STATE_PR;
 
       // Set the coordinates (if released use the last-pressed coordinates)
-      data->point.x = last_x;
-      data->point.y = last_y;
+      #if TFT_ROTATION == TFT_ROTATE_180
+        data->point.x = TFT_WIDTH - last_x;
+        data->point.y = TFT_HEIGHT -last_y;
+      #else
+        data->point.x = last_x;
+        data->point.y = last_y;
+      #endif
 
       last_x = last_y = 0;
       last_touch_state = LV_INDEV_STATE_PR;

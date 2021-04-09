@@ -58,6 +58,7 @@ tool_menu_def                tool_menu;
 MachinePara_menu_def         MachinePara_menu;
 pause_msg_def                pause_msg_menu;
 eeprom_def                   eeprom_menu;
+touchmi_menu_def             touchmi_menu;
 
 machine_common_def machine_menu;
 void machine_setting_disp() {
@@ -123,8 +124,8 @@ void machine_setting_disp() {
     machine_menu.LevelingParaConf        = LEVELING_PARA_CONF_CN;
     machine_menu.LevelingManuPosConf     = LEVELING_MANUAL_POS_CN;
     machine_menu.LevelingAutoCommandConf = LEVELING_AUTO_COMMAND_CN;
-    machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_CN;
-
+  	machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_CN;
+    
     machine_menu.LevelingSubConfTitle = LEVELING_PARA_CONF_TITLE_CN;
     machine_menu.AutoLevelEnable      = AUTO_LEVELING_ENABLE_CN;
     machine_menu.BLtouchEnable        = BLTOUCH_LEVELING_ENABLE_CN;
@@ -280,6 +281,21 @@ void machine_setting_disp() {
     machine_menu.Yoffset         = OFFSET_Y_CN;
     machine_menu.Zoffset         = OFFSET_Z_CN;
 
+    machine_menu.LevelingTouchmiConf = LEVELING_TOUCHMI_CN;
+    machine_menu.TouchmiInit         = TM_INIT_CN;
+    machine_menu.TouchmiOffsetpos    = TM_ZOFFSETPOS_CN;
+    machine_menu.TouchmiOffsetneg    = TM_ZOFFSETNEG_CN;
+    machine_menu.TouchmiSave         = TM_SAVE_CN;
+    machine_menu.TouchmiTest         = TM_TEST_CN;
+    
+    machine_menu.BLTouchLevelingConfTitle = BLTOUCH_LEVELING_TITTLE_CN;
+    machine_menu.BLTouchLevelingConf      = BLTOUCH_LEVELING_CN;
+    machine_menu.BLTouchInit              = BLTOUCH_INIT_CN;
+    machine_menu.BLTouchOffsetpos         = BLTOUCH_ZOFFSETPOS_CN;
+    machine_menu.BLTouchOffsetneg         = BLTOUCH_ZOFFSETNEG_CN;
+    machine_menu.BLTouchSave              = BLTOUCH_SAVE_CN;
+    machine_menu.BLTouchTest              = BLTOUCH_TEST_CN;
+
     machine_menu.HomingSensitivityConfTitle = HOMING_SENSITIVITY_CONF_TITLE_CN;
     machine_menu.X_Sensitivity              = X_SENSITIVITY_CN;
     machine_menu.Y_Sensitivity              = Y_SENSITIVITY_CN;
@@ -352,7 +368,7 @@ void machine_setting_disp() {
     machine_menu.LevelingManuPosConf     = LEVELING_MANUAL_POS_T_CN;
     machine_menu.LevelingAutoCommandConf = LEVELING_AUTO_COMMAND_T_CN;
     machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_T_CN;
-
+    
     machine_menu.LevelingSubConfTitle = LEVELING_PARA_CONF_TITLE_T_CN;
     machine_menu.AutoLevelEnable      = AUTO_LEVELING_ENABLE_T_CN;
     machine_menu.BLtouchEnable        = BLTOUCH_LEVELING_ENABLE_T_CN;
@@ -509,6 +525,21 @@ void machine_setting_disp() {
     machine_menu.Yoffset         = OFFSET_Y_T_CN;
     machine_menu.Zoffset         = OFFSET_Z_T_CN;
 
+    machine_menu.LevelingTouchmiConf = LEVELING_TOUCHMI_T_CN;
+    machine_menu.TouchmiInit         = TM_INIT_T_CN;
+    machine_menu.TouchmiOffsetpos    = TM_ZOFFSETPOS_T_CN;
+    machine_menu.TouchmiOffsetneg    = TM_ZOFFSETNEG_T_CN;
+    machine_menu.TouchmiSave         = TM_SAVE_T_CN;
+    machine_menu.TouchmiTest         = TM_TEST_T_CN;
+
+    machine_menu.BLTouchLevelingConfTitle = BLTOUCH_LEVELING_TITTLE_T_CN;
+    machine_menu.BLTouchLevelingConf      = BLTOUCH_LEVELING_T_CN;
+    machine_menu.BLTouchInit              = BLTOUCH_INIT_T_CN;
+    machine_menu.BLTouchOffsetpos         = BLTOUCH_ZOFFSETPOS_T_CN;
+    machine_menu.BLTouchOffsetneg         = BLTOUCH_ZOFFSETNEG_T_CN;
+    machine_menu.BLTouchSave              = BLTOUCH_SAVE_T_CN;
+    machine_menu.BLTouchTest              = BLTOUCH_TEST_T_CN;
+
     machine_menu.HomingSensitivityConfTitle = HOMING_SENSITIVITY_CONF_TITLE_T_CN;
     machine_menu.X_Sensitivity              = X_SENSITIVITY_T_CN;
     machine_menu.Y_Sensitivity              = Y_SENSITIVITY_T_CN;
@@ -581,7 +612,7 @@ void machine_setting_disp() {
     machine_menu.LevelingManuPosConf     = LEVELING_MANUAL_POS_EN;
     machine_menu.LevelingAutoCommandConf = LEVELING_AUTO_COMMAND_EN;
     machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_EN;
-
+    
     machine_menu.LevelingSubConfTitle = LEVELING_PARA_CONF_TITLE_EN;
     machine_menu.AutoLevelEnable      = AUTO_LEVELING_ENABLE_EN;
     machine_menu.BLtouchEnable        = BLTOUCH_LEVELING_ENABLE_EN;
@@ -740,6 +771,21 @@ void machine_setting_disp() {
     machine_menu.Xoffset         = OFFSET_X_EN;
     machine_menu.Yoffset         = OFFSET_Y_EN;
     machine_menu.Zoffset         = OFFSET_Z_EN;
+
+    machine_menu.LevelingTouchmiConf = LEVELING_TOUCHMI_EN;
+    machine_menu.TouchmiInit         = TM_INIT_EN;
+    machine_menu.TouchmiOffsetpos    = TM_ZOFFSETPOS_EN;
+    machine_menu.TouchmiOffsetneg    = TM_ZOFFSETNEG_EN;
+    machine_menu.TouchmiSave         = TM_SAVE_EN;
+    machine_menu.TouchmiTest         = TM_TEST_EN;
+
+    machine_menu.BLTouchLevelingConfTitle = BLTOUCH_LEVELING_TITTLE_EN;
+    machine_menu.BLTouchLevelingConf      = BLTOUCH_LEVELING_EN;
+    machine_menu.BLTouchInit              = BLTOUCH_INIT_EN;
+    machine_menu.BLTouchOffsetpos         = BLTOUCH_ZOFFSETPOS_EN;
+    machine_menu.BLTouchOffsetneg         = BLTOUCH_ZOFFSETNEG_EN;
+    machine_menu.BLTouchSave              = BLTOUCH_SAVE_EN;
+    machine_menu.BLTouchTest              = BLTOUCH_TEST_EN;
 
     machine_menu.HomingSensitivityConfTitle = HOMING_SENSITIVITY_CONF_TITLE_EN;
     machine_menu.X_Sensitivity              = X_SENSITIVITY_EN;
@@ -1074,6 +1120,7 @@ void disp_language_init() {
       print_file_dialog_menu.reprint            = DIALOG_REPRINT_CN;
       print_file_dialog_menu.wifi_enable_tips   = DIALOG_WIFI_ENABLE_TIPS_CN;
       print_file_dialog_menu.machinePausingTips = DIALOG_PAUSING_TIPS_CN;
+      print_file_dialog_menu.autolevelingTips   = DIALOG_AUTO_LEVELING_TIPS_CN;
 
       pause_msg_menu.pausing       = MESSAGE_PAUSING_CN;
       pause_msg_menu.changing      = MESSAGE_CHANGING_CN;
@@ -1320,6 +1367,7 @@ void disp_language_init() {
             print_file_dialog_menu.reprint             = DIALOG_REPRINT_T_CN;
             print_file_dialog_menu.wifi_enable_tips    = DIALOG_WIFI_ENABLE_TIPS_T_CN;
             print_file_dialog_menu.machinePausingTips  = DIALOG_PAUSING_TIPS_T_CN;
+            print_file_dialog_menu.autolevelingTips    = DIALOG_AUTO_LEVELING_TIPS_T_CN;
 
             pause_msg_menu.pausing       = MESSAGE_PAUSING_T_CN;
             pause_msg_menu.changing      = MESSAGE_CHANGING_T_CN;
@@ -1555,6 +1603,7 @@ void disp_language_init() {
             print_file_dialog_menu.reprint               = DIALOG_REPRINT_EN;
             print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_EN;
             print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_EN;
+            print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_EN;
 
             pause_msg_menu.pausing       = MESSAGE_PAUSING_EN;
             pause_msg_menu.changing      = MESSAGE_CHANGING_EN;
@@ -1718,9 +1767,9 @@ void disp_language_init() {
             machine_menu.LevelingParaConfTitle   = LEVELING_CONF_TITLE_RU;
             machine_menu.LevelingParaConf        = LEVELING_PARA_CONF_RU;
             machine_menu.LevelingManuPosConf     = LEVELING_MANUAL_POS_RU;
-            machine_menu.LevelingAutoCommandConf = LEVELING_AUTO_COMMAND_RU;
-            machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_RU;
-
+          	machine_menu.LevelingAutoCommandConf = LEVELING_AUTO_COMMAND_RU;
+          	machine_menu.LevelingAutoZoffsetConf = LEVELING_AUTO_ZOFFSET_RU;
+            
             machine_menu.AccelerationConfTitle = ACCELERATION_CONF_TITLE_RU;
             machine_menu.PrintAcceleration     = PRINT_ACCELERATION_RU;
             machine_menu.RetractAcceleration   = RETRACT_ACCELERATION_RU;
@@ -1774,6 +1823,21 @@ void disp_language_init() {
             machine_menu.Xoffset         = OFFSET_X_RU;
             machine_menu.Yoffset         = OFFSET_Y_RU;
             machine_menu.Zoffset         = OFFSET_Z_RU;
+
+            machine_menu.LevelingTouchmiConf = LEVELING_TOUCHMI_RU;
+            machine_menu.TouchmiInit         = TM_INIT_RU;
+            machine_menu.TouchmiOffsetpos    = TM_ZOFFSETPOS_RU;
+            machine_menu.TouchmiOffsetneg    = TM_ZOFFSETNEG_RU;
+            machine_menu.TouchmiSave         = TM_SAVE_RU;
+            machine_menu.TouchmiTest         = TM_TEST_RU;
+
+            machine_menu.BLTouchLevelingConfTitle = BLTOUCH_LEVELING_TITTLE_RU;
+            machine_menu.BLTouchLevelingConf      = BLTOUCH_LEVELING_RU;
+            machine_menu.BLTouchInit              = BLTOUCH_INIT_RU;
+            machine_menu.BLTouchOffsetpos         = BLTOUCH_ZOFFSETPOS_RU;
+            machine_menu.BLTouchOffsetneg         = BLTOUCH_ZOFFSETNEG_RU;
+            machine_menu.BLTouchSave              = BLTOUCH_SAVE_RU;
+            machine_menu.BLTouchTest              = BLTOUCH_TEST_RU;
 
             machine_menu.FilamentConfTitle   = FILAMENT_CONF_TITLE_RU;
             machine_menu.InLength            = FILAMENT_IN_LENGTH_RU;
@@ -1883,6 +1947,7 @@ void disp_language_init() {
             print_file_dialog_menu.reprint               = DIALOG_REPRINT_RU;
             print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_RU;
             print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_RU;
+            print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_RU;
 
             pause_msg_menu.pausing       = MESSAGE_PAUSING_RU;
             pause_msg_menu.changing      = MESSAGE_CHANGING_RU;
@@ -2122,6 +2187,7 @@ void disp_language_init() {
             print_file_dialog_menu.reprint               = DIALOG_REPRINT_SP;
             print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_SP;
             print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_SP;
+            print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_SP;
 
             pause_msg_menu.pausing       = MESSAGE_PAUSING_SP;
             pause_msg_menu.changing      = MESSAGE_CHANGING_SP;
@@ -2358,6 +2424,7 @@ void disp_language_init() {
           print_file_dialog_menu.reprint               = DIALOG_REPRINT_FR;
           print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_FR;
           print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_FR;
+          print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_FR;
 
           pause_msg_menu.pausing       = MESSAGE_PAUSING_FR;
           pause_msg_menu.changing      = MESSAGE_CHANGING_FR;
@@ -2593,6 +2660,7 @@ void disp_language_init() {
           print_file_dialog_menu.reprint               = DIALOG_REPRINT_IT;
           print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_IT;
           print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_IT;
+          print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_IT;
 
           pause_msg_menu.pausing       = MESSAGE_PAUSING_IT;
           pause_msg_menu.changing      = MESSAGE_CHANGING_IT;
@@ -2831,6 +2899,7 @@ void disp_language_init() {
       print_file_dialog_menu.reprint               = DIALOG_REPRINT_EN;
       print_file_dialog_menu.wifi_enable_tips      = DIALOG_WIFI_ENABLE_TIPS_EN;
       print_file_dialog_menu.machinePausingTips    = DIALOG_PAUSING_TIPS_EN;
+      print_file_dialog_menu.autolevelingTips      = DIALOG_AUTO_LEVELING_TIPS_EN;
 
       pause_msg_menu.pausing       = MESSAGE_PAUSING_EN;
       pause_msg_menu.changing      = MESSAGE_CHANGING_EN;

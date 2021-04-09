@@ -102,6 +102,20 @@
 #define LEVELING_MANUAL_POS_EN          "Manual leveling coordinate settings"
 #define LEVELING_AUTO_COMMAND_EN        "AutoLeveling command settings"
 #define LEVELING_AUTO_ZOFFSET_EN        "Nozzle-to-probe offsets settings"
+#define LEVELING_TOUCHMI_EN             "Settings-TouchMi-Probe"
+#define TM_INIT_EN                      "Init"
+#define TM_ZOFFSETPOS_EN                "Zoffset+"
+#define TM_ZOFFSETNEG_EN                "Zoffset-"
+#define TM_SAVE_EN                      "Save"
+#define TM_TEST_EN                      "Test"
+
+#define BLTOUCH_LEVELING_TITTLE_EN      "Machine Settings>BL-Touch Probe"
+#define BLTOUCH_LEVELING_EN             "BL-Touch Probe"
+#define BLTOUCH_INIT_EN                 "Init"
+#define BLTOUCH_ZOFFSETPOS_EN           "Zoffset+"
+#define BLTOUCH_ZOFFSETNEG_EN           "Zoffset-"
+#define BLTOUCH_SAVE_EN                 "Save"
+#define BLTOUCH_TEST_EN                 "Test"
 
 #define LEVELING_PARA_CONF_TITLE_EN     "leveling setting"
 #define AUTO_LEVELING_ENABLE_EN         "Enable auto leveling"
@@ -483,6 +497,7 @@
 #define DIALOG_REPRINT_EN                   "Print again"
 #define DIALOG_WIFI_ENABLE_TIPS_EN          "The wifi module is being configured\nplease wait a moment....."
 #define DIALOG_PAUSING_TIPS_EN              "The machine pauses..."
+#define DIALOG_AUTO_LEVELING_TIPS_EN        "Auto-leveling, please wait..."
 
 #define HOTBED_ENABLE_EN        "Enable heatbed"
 #define MOTOR_EN_HIGH_LEVEL_EN  "High"

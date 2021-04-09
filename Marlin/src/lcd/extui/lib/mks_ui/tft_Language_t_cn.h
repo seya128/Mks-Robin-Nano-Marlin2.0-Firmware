@@ -87,6 +87,20 @@
 #define LEVELING_MANUAL_POS_T_CN        "手動調平坐標設置"
 #define LEVELING_AUTO_COMMAND_T_CN      "自動調平指令設置"
 #define LEVELING_AUTO_ZOFFSET_T_CN      "擠出頭與調平開關偏移設置"
+#define LEVELING_TOUCHMI_T_CN           "機器參數>TouchMi-Probe"
+#define TM_INIT_T_CN                    "初始化"
+#define TM_ZOFFSETPOS_T_CN              "Zoffset+"
+#define TM_ZOFFSETNEG_T_CN              "Zoffset-"
+#define TM_SAVE_T_CN                    "保存"
+#define TM_TEST_T_CN                    "測試"
+
+#define BLTOUCH_LEVELING_TITTLE_T_CN    "機器參數>BL-Touch Probe"
+#define BLTOUCH_LEVELING_T_CN           "BL-Touch Probe"
+#define BLTOUCH_INIT_T_CN               "初始化"
+#define BLTOUCH_ZOFFSETPOS_T_CN         "Zoffset+"
+#define BLTOUCH_ZOFFSETNEG_T_CN         "Zoffset-"
+#define BLTOUCH_SAVE_T_CN               "保存"
+#define BLTOUCH_TEST_T_CN               "測試"
 
 #define LEVELING_PARA_CONF_TITLE_T_CN   "調平參數"
 #define AUTO_LEVELING_ENABLE_T_CN       "自動調平"
@@ -464,6 +478,7 @@
 #define DIALOG_REPRINT_T_CN           "再打印壹次"
 #define DIALOG_WIFI_ENABLE_TIPS_T_CN  "wifi模塊正在配置中,請稍等......"
 #define DIALOG_PAUSING_TIPS_T_CN      "機器暫停中..."
+#define DIALOG_AUTO_LEVELING_TIPS_T_CN  "正在自動調平,請稍等..."
 
 #define TEXT_VALUE_T_CN               "%d℃/%d℃"
 #define EXTRUDE_TEXT_VALUE_T_T_CN     ": %d℃"

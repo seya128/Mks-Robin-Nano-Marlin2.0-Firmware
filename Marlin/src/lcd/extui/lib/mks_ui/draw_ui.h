@@ -76,6 +76,8 @@
 #include "draw_baby_stepping.h"
 #include "draw_keyboard.h"
 #include "draw_encoder_settings.h"
+#include "draw_touchmi_settings.h"
+#include "draw_bltouch_settings.h"
 
 #include "../../../../inc/MarlinConfigPre.h"
 
@@ -230,7 +232,9 @@ typedef struct {
           filament_loading_time_flg:1,
           filament_unloading_time_flg:1,
           curSprayerChoose_bak:4;
-  uint8_t tmc_connect_state:1;
+  uint8_t tmc_connect_state:1,
+          autoLeveling:1,
+          adjustZoffset:1;
   uint8_t wifi_name[32];
   uint8_t wifi_key[64];
   uint8_t cloud_hostUrl[96];
@@ -256,6 +260,7 @@ typedef struct {
   float current_y_position_bak;
   float current_z_position_bak;
   float current_e_position_bak;
+  float babyStepZoffsetDiff;
 } UI_CFG;
 
 typedef enum {
@@ -273,6 +278,8 @@ typedef enum {
   TEMP_UI,
   SET_UI,
   ZERO_UI,
+  BLTOUCH_UI,
+  TOUCHMI_UI,
   SPRAYER_UI,
   MACHINE_UI,
   LANGUAGE_UI,
